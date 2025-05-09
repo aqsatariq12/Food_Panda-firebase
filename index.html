@@ -10,12 +10,12 @@
     }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #74ebd5, #9face6);
-      display: flex;
+      /* display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 100vh; */
     }
     .signup-container {
       background: white;
@@ -57,6 +57,12 @@
       margin-top: 15px;
       display: none;
     }
+    .page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
     @media (max-width: 500px) {
       .signup-container {
         margin: 20px;
@@ -66,7 +72,7 @@
   </style>
 </head>
 <body>
-
+  <div class="page-wrapper">
   <div class="signup-container" id="signupForm">
     <h2>Sign Up</h2>
     <input type="text" id="name" placeholder="Full Name" required />
@@ -75,7 +81,9 @@
     <button onclick="submitForm()">Create Account</button>
     <div class="success-message" id="successMsg">Signup successful!</div>
   </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js" type="module"></script>
+  
 </body>
 </html>

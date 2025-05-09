@@ -24,14 +24,16 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">User Dashboard</a>
-    <div onclick="location.href='./cart.html'" class="d-flex position-relative">
-      <a href="#" class="btn position-relative">
+    <div class="d-flex align-items-center gap-2">
+      <a href="./cart.html" class="btn position-relative">
         <i class="bi bi-cart-fill fs-4"></i>
         <span class="badge bg-danger cart-badge" id="cart-badge">0</span>
       </a>
+      <button onclick="logoutUser()" class="btn btn-danger">Logout</button>
     </div>
   </div>
 </nav>
+
 
 <!-- Product Listing -->
 <div class="container mt-4">
